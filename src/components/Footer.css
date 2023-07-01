@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    background-color: #252424;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    transition: 5s;
+    box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+}
+.foot-pages {
+    display: flex;
+    gap: 15px;
+}
+.foot-pages-item {
+
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+}
+.contact-item a{
+    color: #3393f9;
+}
+.contact-item:first-child a{
+    font-size: 30px;
+    color: red;
+}
+.contact-item:last-child a{
+    color: white;
+}
+
+
+@media screen and (max-width: 550px) {
+    .footer{
+        display: none;
+    }
+}

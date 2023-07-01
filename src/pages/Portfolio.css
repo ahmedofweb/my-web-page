@@ -1,0 +1,30 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 150px;
+}
+.site-img {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px 2px rgb(69, 68, 68);
+}
+
+@media screen and (max-width: 550px) {
+    .site-img{
+        max-width: 450px;
+        height: 225px;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    .site-img{
+        border-radius: 10px;
+        max-width: 350px;
+        height: 170px;
+    }
+}

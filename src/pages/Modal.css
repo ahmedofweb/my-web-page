@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css2?family=Biryani:wght@100;200;300;400;500;600;800;900&display=swap);
+
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0, 0.5);
+    backdrop-filter: blur(5px);
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-top: 300px; */
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border-radius: 20px;
+    background: rgb(0, 0, 0, 0.2);
+    border: 2px solid black;
+    box-shadow: 2px 3px 40px 1px rgb(255, 255, 255);
+    font-family: 'Biryani', sans-serif;
+    z-index: 10;
+}
+.modal a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: #0022ff;
+    color: #Fff;
+    width: 100%;
+    max-width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+.modal-txt{
+    font-size: 30px;
+}
+.close{
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    color: #0022ff;
+}
+.line{
+    width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    .modal {
+        max-width: 300px;
+    }
+}
