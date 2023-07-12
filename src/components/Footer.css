@@ -1,14 +1,20 @@
 .footer {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
     background-color: #252424;
     color: #fff;
     padding: 15px;
-    border-radius: 30px;
-    transition: 5s;
+    transition: 2s;
     box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+    position: fixed;
+    /* left: 13%; */
+    width: 100%;
+    max-width: 1250px;
+    bottom: 5px;
+    left: 5px;
+    transform: translate(-3%, 20%);
 }
 .foot-pages {
     display: flex;
@@ -33,10 +39,36 @@
 .contact-item:last-child a{
     color: white;
 }
+.foot_bar_txt{
+    font-size: 15px;
+}
 
 
 @media screen and (max-width: 550px) {
     .footer{
+        display: flex;
+    }
+    .device{
         display: none;
+    }
+    .mobile{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mobile-pages{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        gap: 70px;
+    }
+    .mobile-page-items{
+        font-size: 30px;
+        transition: 3s;
+    }
+    .mobile-page-items:active{
+        font-size: 10px;
     }
 }

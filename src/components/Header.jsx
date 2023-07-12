@@ -27,6 +27,12 @@ function Header() {
 
   const [dropdown, setDropdown] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+
+  function TimerShow(property){
+    setTimeout(() => {
+      property(false)
+    }, 200);
+  }
   return (
     <div className="header">
       <h1 className="logo_name">
@@ -102,14 +108,14 @@ function Header() {
         {showMenu && (
           <div className="modal-backdrop">
             <div className="pages">
-            <p className="close-menu">
+            <ul className="pages-list">
+              <li className="close-menu">
               <CgClose
                 onClick={() => {
                   setShowMenu(false);
                 }}
               />
-            </p>
-            <ul className="pages-list">
+              </li>
               <li
                 onClick={() => {
                   setShowMenu(false);
@@ -171,6 +177,7 @@ function Header() {
                         setChangeLang(false)
                       }
                       setDropdown(false)
+                      TimerShow(setDropdown)
                     }}>
                       <option value='rus'>o'zgartirish</option>
                       <option value='uzb'>O'zbek</option>

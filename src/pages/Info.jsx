@@ -8,7 +8,6 @@ import { BiPhoneCall } from 'react-icons/bi'
 import { FiCornerRightDown } from 'react-icons/fi'
 import { BsGithub }from 'react-icons/bs'
 
-import Footer from '../components/Footer'
 
 //contex
 import { useContext } from 'react'
@@ -28,7 +27,6 @@ function Info() {
             <li className="tarmoqlar_item"><a href="tel:+998911234516"><BiPhoneCall/></a></li>
             <li className="tarmoqlar_item"><a href="https://github.com/ahmedofweb"><BsGithub/></a></li>
         </ul>
-        <Footer/>
     </div>
   )
 }

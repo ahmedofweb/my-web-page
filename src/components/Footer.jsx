@@ -1,28 +1,44 @@
-import './Footer.css'
+import "./Footer.css";
 
-import { AiFillInstagram } from 'react-icons/ai'
-import { BsTelegram } from 'react-icons/bs'
-import { BiPhoneCall } from 'react-icons/bi'
-import { BsGithub }from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
+import { AiFillInstagram } from "react-icons/ai";
+import { BsTelegram } from "react-icons/bs";
+import { BiPhoneCall } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
+
+import { AiTwotoneHome } from "react-icons/ai";
+import { FcAbout } from "react-icons/fc";
+import { MdPermContactCalendar } from "react-icons/md";
+import { FcOpenedFolder } from "react-icons/fc";
+
+//context
+import { useContext } from "react";
+import { ThemeContext } from "./Contex";
 
 function Footer() {
+  const obj = useContext(ThemeContext)
+  const txt = obj.changeLang ? obj.uzb : obj.eng
   return (
-    <div className='footer'>
-        <ul className="foot-pages">
-            <li className="foot-pages-item">Frontend</li>
-            <li className="foot-pages-item">Backend</li>
-            <li className="foot-pages-item">Frontend</li>
-            <li className="foot-pages-item">Portfolio</li>
+    <div className="footer">
+      <div className="mobile">
+        <ul className="mobile-pages">
+          <li className="mobile-page-items"><Link to={'/'}>
+              <AiTwotoneHome/>
+            </Link></li>
+          <li className="mobile-page-items"><Link to={'/about'}>
+              <FcAbout/>
+            </Link></li>
+          <li className="mobile-page-items"><Link to={'/portfolio'}>
+              <FcOpenedFolder/>
+            </Link></li>
+          <li className="mobile-page-items"><Link to={'/contact'}>
+              <MdPermContactCalendar/>
+            </Link></li>
         </ul>
-        <ul className="contacts">
-            <li className="contact-item"><a href="https://instagram.com/ahmedof1_?igshid=NTc4MTIwNjQ2YQ=="><AiFillInstagram/></a></li>
-            <li className="contact-item"><a href="https://t.me/abdulhamid_web"><BsTelegram/></a></li>
-            <li className="contact-item"><a href=""><BiPhoneCall/></a></li>
-            <li className="contact-item"><a href="https://github.com/ahmedofweb"><BsGithub/></a></li>
-        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
