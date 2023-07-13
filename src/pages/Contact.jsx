@@ -12,8 +12,8 @@ function Contact() {
     <div>
         <ul className="contact_list">
             <li className="contact_item"><a href="tel:+998911234516"><BiPhoneCall/> Qo'ngiroq qilish</a></li>
-            <li className="contact_item"><a href="https://t.me/abdulhamid_web"><BsTelegram/> Telegramdan profil</a></li>
-            <li className="contact_item"><a href="https://instagram.com/ahmedof1_?igshid=NTc4MTIwNjQ2YQ=="><AiFillInstagram/> Instagramdan profil</a></li>
+            <li className="contact_item"><a href="https://t.me/abdulhamid_web"><BsTelegram/> Telegram profil</a></li>
+            <li className="contact_item"><a href="https://instagram.com/ahmedof1_?igshid=NTc4MTIwNjQ2YQ=="><AiFillInstagram/> Instagram profil</a></li>
             <li className="contact_item"><a href="https://github.com/ahmedofweb"><BsGithub/> Github profil</a></li>
             <li className="contact_item"><a href="https://app.netlify.com/teams/ahmedofweb/overview"><SiNetlify/> Netlify profil</a></li>
         </ul>
