@@ -76,8 +76,10 @@ const rus = {
 
 function ContexProvider({children}) {
     const [changeLang, setChangeLang] = useState(true)
+    const [showMenu, setShowMenu] = useState(false);
+
   return (
-    <ThemeContext.Provider value={{uzb, eng, changeLang, setChangeLang}}>
+    <ThemeContext.Provider value={{uzb, eng, changeLang, setChangeLang, showMenu, setShowMenu}}>
         {children}
     </ThemeContext.Provider>
   )

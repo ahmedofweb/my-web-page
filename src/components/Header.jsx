@@ -24,15 +24,18 @@ function Header() {
   const obj = useContext(ThemeContext)
   const setChangeLang = obj.setChangeLang
   const txt = obj.changeLang ? obj.uzb : obj.eng
+  // const showMenu = obj.showMenu
+  // const setShowMenu = obj.setShowMenu
 
+  const [showMenu, setShowMenu] = useState(false)
   const [dropdown, setDropdown] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
 
   function TimerShow(property){
     setTimeout(() => {
       property(false)
     }, 200);
   }
+
   return (
     <div className="header">
       <h1 className="logo_name">
@@ -106,7 +109,9 @@ function Header() {
           />
         </p>
         {showMenu && (
-          <div className="modal-backdrop">
+          <div className="modal-backdrop" onClick={() => {
+              // setShowMenu(false)
+          }}>
             <div className="pages">
             <ul className="pages-list">
               <li className="close-menu">

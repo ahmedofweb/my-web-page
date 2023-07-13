@@ -3,6 +3,9 @@ import "./Modal.css";
 import { CgClose } from "react-icons/cg";
 import { AiOutlineLink } from "react-icons/ai";
 
+import { useContext } from "react";
+import { ThemeContext } from "../components/Contex";
+
 function Modal({ link, setShowModal }) {
   return (
     <div className="modal-backdrop">
@@ -26,14 +29,14 @@ function Modal({ link, setShowModal }) {
           </a>
         </div>
         <div className="mobile-modal">
-          <a className="link_mobile" href={link}>
-            Open
-          </a>
-          <button className="link_mobile link_mobile_back" 
+        <button className="link_mobile" 
               onClick={() => {
                 setShowModal(false);
               }}
           >Back</button>
+          <a className="link_mobile link_mobile_open" href={link}>
+            Open
+          </a>
         </div>
       </div>
     </div>
