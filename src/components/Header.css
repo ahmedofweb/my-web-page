@@ -151,12 +151,19 @@ ul, ol{
         padding-right: 30px;
         margin: 0;
     }
+    .burger:active .pages{
+        transform: translateX(-25px) rotate(45deg);
+    }
     .close-menu{
         color: #000;
         display: flex;
         position: fixed;
         top: 10px;
         right: 30px;
+        animation: animate 1s;
+    }
+    .close-menu:active{
+        animation: animate 0.1s;
     }
     .pages_item{
         color: #000;
@@ -177,4 +184,20 @@ ul, ol{
     }
 
 }
+/* @keyframes animate {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+} */
 
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}

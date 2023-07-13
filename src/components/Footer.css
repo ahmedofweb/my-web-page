@@ -66,9 +66,9 @@
     }
     .mobile-page-items{
         font-size: 30px;
-        transition: 0.5s;
+        transition: 0.1s;
     }
     .mobile-page-items:active{
-        font-size: 6px;
+        font-size: 15px;
     }
 }
