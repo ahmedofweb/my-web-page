@@ -23,16 +23,16 @@ function Footer() {
     <div className="footer">
       <div className="mobile">
         <ul className="mobile-pages">
-          <li className="mobile-page-items"><Link to={'/'}>
+          <li className="mobile-page-items"><Link className="mobile-page-icons" to={'/'}>
               <AiTwotoneHome/>
             </Link></li>
-          <li className="mobile-page-items"><Link to={'/about'}>
+          <li className="mobile-page-items"><Link className="mobile-page-icons" to={'/about'}>
               <FcAbout/>
             </Link></li>
-          <li className="mobile-page-items"><Link to={'/portfolio'}>
+          <li className="mobile-page-items"><Link className="mobile-page-icons" to={'/portfolio'}>
               <FcOpenedFolder/>
             </Link></li>
-          <li className="mobile-page-items"><Link to={'/contact'}>
+          <li className="mobile-page-items"><Link className="mobile-page-icons" to={'/contact'}>
               <MdPermContactCalendar/>
             </Link></li>
         </ul>

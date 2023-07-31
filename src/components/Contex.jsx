@@ -34,6 +34,10 @@ const uzb = {
             title: "English",
             text: "INgliz tili . Maqsadlarimdan bitasi bu ingliz tilini mukammal bilish va America davlatlariga IT universitedlarda o'qish uchun borish. Hozirda man Registan LC o'quv markazida Ingliz tilini o'rganyabman. Darajam Beginner. Kurs 10 oyga moljallangan bolib ,asosan IELTS  testiga tayorlaniladi."
         }
+    },
+    portfolio: {
+        title : "Portfolio bolimi !",
+        text: "Bu bo'limda man qurgan ba'zi web dasturlarni korishingiz mumkin !"
     }
 }
 const eng = {
@@ -66,11 +70,13 @@ const eng = {
             title: "English",
             text: "English language . One of my goals is to master English and go to America to study at IT universities. I am currently studying English at the Registan LC. My level is Elementary. The course is designed for 10 months and mainly prepares for the IELTS test."
         }
+    },
+    portfolio: {
+        title : "Portfolio section !",
+        text: "You can see I built web programms in this section !"
     }
 }
-const rus = {
-    title: "Russian"
-}
+
 
 
 

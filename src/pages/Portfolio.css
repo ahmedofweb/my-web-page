@@ -1,9 +1,16 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Biryani:wght@100;200;300;400;500;600;800;900&display=swap);
+
 .portfolio {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     margin-top: 150px;
+}
+.site{
+    width: 100%;
+    height: 500px;
 }
 .site-img {
     width: 100%;
@@ -17,11 +24,26 @@
     max-width: 700px;
     height: 350px;
 }
+.prt-title{
+    margin: 0;
+    font-family: 'Biryani', sans-serif;
+    font-size: 60px;
+    padding: 0 40px;
+}
+.prt-text{
+    margin: 0;
+    font-family: 'Biryani', sans-serif;
+    font-size: 30px;
+    padding: 0 40px;
+}
 
 @media screen and (max-width: 550px) {
     .portfolio{
         margin-bottom: 100px;
         margin-top: 100px;
+    }
+    .site{
+        height: 250px;
     }
     .site-img{
         max-width: 450px;
@@ -31,9 +53,18 @@
         max-width: 400px;
         height: 200px;
     }
+    .prt-title{
+        font-size: 40px;
+    }
+    .prt-text{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 450px){
+    .site{
+        height: 180px;
+    }
     .site-img{
         border-radius: 10px;
         max-width: 350px;

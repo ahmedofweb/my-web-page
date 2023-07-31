@@ -92,6 +92,7 @@ function Header() {
                 setChangeLang(false)
               }
               setDropdown(false)
+              setShowMenu(false)
             }}>
               <option value={'rus'}>o'zgartirish</option>
               <option value={'uzb'}>O'zbek</option>
@@ -182,6 +183,7 @@ function Header() {
                         setChangeLang(false)
                       }
                       setDropdown(false)
+                      setShowMenu(false)
                       TimerShow(setDropdown)
                     }}>
                       <option value='rus'>o'zgartirish</option>

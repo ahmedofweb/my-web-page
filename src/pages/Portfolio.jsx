@@ -1,9 +1,16 @@
 import './Portfolio.css' 
 import { useState } from 'react'
 
+import { useContext } from 'react'
+import { ThemeContext } from '../components/Contex'
+
 import Modal from './Modal'
 
 function Portfolio() {
+  const obj = useContext(ThemeContext)
+  const txt = obj.changeLang ? obj.uzb : obj.eng
+  console.log(txt)
+
   const [showModal , setShowModal] = useState(false)
   const [propsLink, setPropsLink] = useState(null)
   const [portfolio, setPortfolio] = useState([
@@ -64,9 +71,11 @@ function Portfolio() {
 
 return(
   <div className='portfolio'>
+    <h1 className='prt-title'>{txt.portfolio.title}</h1>
+    <p className='prt-text'>{txt.portfolio.text}</p>
      {showModal &&
             <Modal  setShowModal={setShowModal} link={propsLink}/>
-        }
+      }
      { portfolio.map((site) => {
     return(
       <div className='site' key={site.id}>

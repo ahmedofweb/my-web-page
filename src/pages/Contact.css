@@ -8,6 +8,12 @@
     padding: 0;
 }
 .contact_item {
+    display: flex;
     font-size: 25px;
+    width: 100%;
+    max-width: 220px;
     gap: 20px;
+    text-align: start;
+    margin-right: auto;
+    margin-left: auto;
 }
