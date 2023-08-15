@@ -33,12 +33,6 @@ function Portfolio() {
       id: 6
     },  
     {
-      img: './cuser.jpg',
-      link: 'http://createusers1.netlify.app/',
-      github: 'https://github.com/ahmedofweb/CreateUser',
-      id: 1
-    },  
-    {
       img: './bookuz.jpg',
       link: '',
       id: 2
@@ -48,12 +42,6 @@ function Portfolio() {
       link: 'https://words-info.netlify.app/',
       github: '',
       id: 8
-    }, 
-    {
-        img: './wordsplay.jpg',
-        link: 'https://ia-game.netlify.app/',
-        github:'',
-        id: 4
     }, 
     {
       img: './countries.jpg',
