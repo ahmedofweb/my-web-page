@@ -16,9 +16,6 @@ import {BrowserRouter as Router , Routes , Route}  from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <div className="bg"></div>
-      <div className="bg bg2"></div>
-      <div className="bg bg3"></div>
       <Router>
       <Header />
       <Routes>

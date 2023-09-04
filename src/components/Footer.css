@@ -3,11 +3,11 @@
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
-    background-color: #252424;
+    background-color: var(--white);
     color: #fff;
     padding: 15px;
     transition: 2s;
-    box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+    box-shadow: var(--light-shadow);
     position: fixed;
     /* left: 13%; */
     width: 100%;
@@ -15,6 +15,11 @@
     bottom: 5px;
     left: 5px;
     transform: translate(-3%, 20%);
+    transition: 1s;
+}
+body.dark .footer{
+    background-color: var(--black);
+    box-shadow: var(--dark-shadow);
 }
 .foot-pages {
     display: flex;

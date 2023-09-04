@@ -30,6 +30,9 @@
     box-shadow: 2px 3px 40px 1px rgb(255, 255, 255);
     font-family: 'Biryani', sans-serif;
     z-index: 10;
+    transition: 3s;
+    /* animation: openmodal 0.5s; */
+    transform: translate(-50% -50%);
 }
 .link_open_device{
     padding: 10px;
@@ -98,5 +101,26 @@
     }
     .mobile-modal{
         display: flex;
+    }
+}
+
+@keyframes openmodal {
+    0%{
+        transform: translateY(-300px);
+    }
+    70%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-50px);
+    }
+    85%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
     }
 }

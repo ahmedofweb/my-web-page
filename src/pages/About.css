@@ -5,12 +5,13 @@
     flex-direction: column;
     text-align: center;
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 200px;
     font-family: 'Biryani', sans-serif;
     padding: 0;
     margin-bottom: 100px;
-
+    position: relative;
 }
+
 .item {
     max-width: 600px;
     width: 100%;
@@ -21,8 +22,12 @@
     margin-right: auto;
     margin-left: auto;
     border-radius: 20px;
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: var(--white);
     backdrop-filter: blur(5px);
+    position: relative;
+}
+body.dark .item{
+    background-color: var(--black);
 }
 .item:first-child{
     background-image: url('https://commons.wikimedia.org/wiki/File:React-icon.svg');
@@ -38,15 +43,38 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Biryani', sans-serif;
+    z-index: 100;
 }
+
 
 .item p{
     font-size: 20px;
+    animation: openitem 1s;
 }
 .bold {
 }
 
+.animate-icon{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-size: 40px;
+    bottom: 10px;
+    left: 10px;
+    transform: translateX(-50% -50%);
+    opacity: 0.4;
+    animation: float 10s ease-out infinite;
+}
+.icon-after{
+    font-size: 150px;
+    bottom: 50%;
+    left: 47%;
+}
+
 @media screen and (max-width: 550px) {
+    .list{
+        margin-top: 100px;
+    }
     .item h1{
         font-size: 40px;
     }
@@ -56,6 +84,7 @@
     .item{
         max-width: 400px;
         padding: 15px;
+        border-radius: 10px;
     }
 }
 
@@ -63,5 +92,28 @@
     .item{
        max-width: 300px;
        pad: 5px;
+    }
+}
+
+
+@keyframes float {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg)
+    }
+}
+
+
+@keyframes openitem {
+    0%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0px);
     }
 }

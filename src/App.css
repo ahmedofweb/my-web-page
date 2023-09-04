@@ -49,31 +49,16 @@ html {
 
 body {
   margin:0;
+  background-color: var(--silver);
+  transition: 1s;
+  color: var(--light-black);
 }
-
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(173, 170, 170) 50%, rgb(255, 255, 255) 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+body.dark {
+  background-color: var(--light-black);
+  color: var(--dark-blue);
 }
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-}
-
-.bg3 {
-  animation-duration:5s;
-}
-
 .content {
-  background-color:rgba(255,255,255,.8);
+  background-color:rgba(255, 0, 0, 0.8);
   border-radius:.25em;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
   box-sizing:border-box;
@@ -95,5 +80,28 @@ h1 {
   }
   100% {
     transform:translateX(25%);
+  }
+}
+
+.mode{
+  position: absolute;
+  bottom: -40px;
+  right: 50px;
+  color: #eeff00;
+  border-radius: 70%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.mode:active{
+  animation: rotateMode 0.5s;
+}
+
+@keyframes rotateMode {
+  0%{
+      transform: rotateY(0deg);
+  }
+  100%{
+      transform: rotateY(180deg);
   }
 }

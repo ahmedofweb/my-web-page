@@ -3,10 +3,19 @@
   line-height: 1.5;
   font-weight: 400;
   padding: 0;
-
-  color-scheme: light dark;
-  color: rgba(78, 78, 80, 0.87);
-  background-color: #fffefe;
+    --dark-blue: #359bfa;
+    --silver: #b8b8b8;
+    --gray: #29292a66;
+    --black: #000000;
+    --text-light-blue: #57a4e7;
+    --text-black: #000000;
+    --light-black: rgb(49, 48, 48);
+    --white: #ffffff;
+    --light-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+    --dark-shadow: 2px 2px 15px 1px rgb(255, 255, 255);
+    /* fonts */
+    --main-font: "Open Sans";
+  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

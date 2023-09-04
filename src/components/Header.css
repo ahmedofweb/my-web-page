@@ -8,12 +8,13 @@ ul, ol{
     list-style: none;
 }
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
-    background-color: #252424;
-    color: #fff;
+    background-color: var(--white);
+    color: var(--light-black);
     padding: 15px;
     border-radius: 30px;
     margin-bottom: 40px;
@@ -24,11 +25,18 @@ ul, ol{
     top: 20px;
     /* transform: translate(-50 , -50); */
     font-family: 'Biryani', sans-serif;
-    box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+    box-shadow: var(--light-shadow);
     z-index: 100;
+    /* position: relative; */
+    transition: 1s;
+}
+body.dark .header{
+    background-color: var(--black);
+    box-shadow: var(--dark-shadow);
+    color: var(--dark-blue);
 }
 .logo_name {
-    color: #1da6eb;
+    color: var(--dark-blue);
     font-size: 30px;
     display: flex;
     flex-direction: column;
@@ -52,8 +60,12 @@ ul, ol{
     background-color: #fff;
     color: #000;
     box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
-    z-index: 100;
+    z-index: 80;
     transition: 0.5s;
+    animation: menu 0.5s ;
+}
+body.dark .pages{
+    background-color: var(--light-black);
 }
 .pages-list-device{
     display: flex;
@@ -71,10 +83,20 @@ ul, ol{
     flex-direction: column;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--black);
     padding: 5px;
     margin: 0;
     position: relative;
+    transition: 1s;
+}
+body.dark .pages_item{
+    color: var(--dark-blue);
+}
+.pages_item:hover{
+    opacity: 0.5;
+}
+.pages_item:active .icon{
+    font-size: 22px;
 }
 .bg-light{
     background-color: #ffffff;
@@ -116,6 +138,10 @@ ul, ol{
     margin: 0;
     padding: 5px;
     position: relative;
+    color: var(--black);
+}
+body.dark .pages_item_lang{
+    color: var(--dark-blue);
 }
 
 .burger{
@@ -128,13 +154,20 @@ ul, ol{
     display: none;
 }
 
+
 @media screen and (max-width: 550px) {
     .header{
+        position: fixed;
         left: 0;
         top: 0;
         border-radius: 0;
         padding: 0;
         padding-top: 5px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .mode{
+        right: 10px;
     }
     .logo_name{
         font-size: 20px;
@@ -151,21 +184,23 @@ ul, ol{
         display: block;
         padding-right: 30px;
         margin: 0;
-    }
-    .burger:active .pages{
-        transform: translateX(-25px) rotate(45deg);
+        z-index: 100;
     }
     .close-menu{
-        color: #000;
+        color: var(--black);
         display: flex;
         position: fixed;
         top: 10px;
         right: 30px;
         animation: animate 0.5s;
     }
-    .close-menu:active{
-        animation: animate 0.1s;
+    body.dark .close-menu{
+        color: var(--dark-blue);
     }
+    .close-menu:active .pages{
+        animation: animate 0.5s;
+    }
+    
     .pages_item{
         color: #000;
         border-bottom: 1px solid #000;
@@ -196,9 +231,18 @@ ul, ol{
 
 @keyframes animate {
     0%{
-        transform: rotate(0deg);
+        transform: translateX(0px);
     }
     100%{
-        transform: rotate(180deg);
+        transform: translateX(200deg);
+    }
+}
+
+@keyframes menu {
+    100%{
+        transform: translateX(0px);
+    }
+    0%{
+        transform: translateX(50%);
     }
 }
