@@ -11,11 +11,11 @@ function Contact() {
   return (
     <div>
         <ul className="contact_list">
-            <li className="contact_item"><a href="tel:+998911234516"><BiPhoneCall/> Qo'ngiroq qilish</a></li>
-            <li className="contact_item"><a href="https://t.me/abdulhamid_web"><BsTelegram/> Telegram profil</a></li>
-            <li className="contact_item"><a href="https://instagram.com/ahmedof1_?igshid=NTc4MTIwNjQ2YQ=="><AiFillInstagram/> Instagram profil</a></li>
-            <li className="contact_item"><a href="https://github.com/ahmedofweb"><BsGithub/> Github profil</a></li>
-            <li className="contact_item"><a href="https://app.netlify.com/teams/ahmedofweb/overview"><SiNetlify/> Netlify profil</a></li>
+            <li className="contact_item"><a href="tel:+998911234516"><BiPhoneCall/> Call me</a></li>
+            <li className="contact_item"><a href="https://github.com/ahmedofweb"><BsGithub/> Github profile</a></li>
+            <li className="contact_item"><a href="https://app.netlify.com/teams/ahmedofweb/overview"><SiNetlify/> Netlify profile</a></li>
+            <li className="contact_item"><a href="https://t.me/abdulhamid_web"><BsTelegram/> Telegram profile</a></li>
+            <li className="contact_item"><a href="https://instagram.com/ahmedof1_?igshid=NTc4MTIwNjQ2YQ=="><AiFillInstagram/> Instagram profile</a></li>
         </ul>
     </div>
   )
