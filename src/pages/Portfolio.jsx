@@ -15,6 +15,13 @@ function Portfolio() {
   const [propsLink, setPropsLink] = useState(null);
   const [portfolio, setPortfolio] = useState([
     {
+      img: "./yurist.jpg",
+      mbimg: "./mb-yurist.jpg",
+      link: "https://yurist.netlify.app/",
+      github: "",
+      id: 1,
+    },
+    {
       img: "./weather.jpg",
       mbimg: "./mb-weather.jpg",
       link: "https://aa-the-weather.netlify.app/",
