@@ -25,23 +25,41 @@ const uzb = {
     about:[
         {
             title: "O'zim haqimda",
-            text: "Salom ! mani ismim Abdulhamid familiyam Ahmedov va man 19 yoshdaman.yashash joyim Fargona shaxar.Man xozirda abiturientman va Americadigi IT universitedlaridan birida o'qish uchun tayyorlanyabman. Dasturlashni Front end kursini bitrganman va xozirda amaliyot o'tayabman. Shu bilan birga dasturlashni Back end kursini oqiyabman va ingliz tilidan IELTS imtihoniga xam tayyorlanyabman , bularni barchasi xaqida batafsil pastroqda oqishingiz mumkin !"
+            text: "Salom ! mani ismim Abdulhamid familiyam Ahmedov va man 19 yoshdaman.yashash joyim Fargona shaxar.Man xozirda abiturientman va Americadigi IT universitedlaridan birida o'qish uchun tayyorlanyabman. Dasturlashni Front end kursini bitrganman va xozirda amaliyot o'tayabman. Shu bilan birga dasturlashni Back end kursini oqiyabman va ingliz tilidan IELTS imtihoniga xam tayyorlanyabman , bularni barchasi xaqida batafsil pastroqda oqishingiz mumkin !",
         },
         {
             icons: [
                 <FaReact/>
             ] ,
             title: "Frontend",
-            text: "Man Najot Ta'lim IT o'quv markazining Frontend kursini bitirganman. Bu kursda HTML, CSS va Javascript tilini o'rganganman qo'shimcha ravishda fremworklardan Reactni xam o'rganganman. Hozirda Frontend yonalishi boyicha frilanserlik qilaman, darajam Junior. 2 real loyihada qatnashganman , loyihalar haqida esa koproq Portfolio dan bilib olishingiz mumkin."
+            text: "Man Najot Ta'lim IT o'quv markazining Frontend kursini bitirganman. Bu kursda HTML, CSS va Javascript tilini o'rganganman qo'shimcha ravishda fremworklardan Reactni xam o'rganganman. Hozirda Frontend yonalishi boyicha frilanserlik qilaman, darajam Junior. 2 real loyihada qatnashganman , loyihalar haqida esa koproq Portfolio dan bilib olishingiz mumkin.",
+            skills: [
+                "Java Script",
+                "React.js",
+                "Rest API",
+                "Bootstrap",
+                "Tailwind",
+                "Scss",
+                "Css",
+                "Html"
+            ],
         },
         {
             icons: [<TbBrandDjango/>],
             title: "Backend",
-            text: "Man hozir qo'shimcha ravishda Back end yonalishini xam o'rganyabman , sababi qiziqishim. Bu kurs 8 oyga mo'ljallangan bo'lib , kurs davomida Python, SQL, Postgresql, Django, Flask, aiGramm(telegram botlar) va yana bazi fremwork , kutubxonalar o'rganiladi."
+            text: "Man hozir qo'shimcha ravishda Back end yonalishini xam o'rganyabman , sababi qiziqishim. Bu kurs 8 oyga mo'ljallangan bo'lib , kurs davomida Python, SQL, Postgresql, Django, Flask, aiGramm(telegram botlar) va yana bazi fremwork , kutubxonalar o'rganiladi.",
+            skills: [
+                "Django",
+                "Flask",
+                "Python",
+                "Postgresql",
+                "Django Rest API",
+            ]
         },
         {
             title: "English",
-            text: "INgliz tili . Maqsadlarimdan bitasi bu ingliz tilini mukammal bilish va America davlatlariga IT universitedlarda o'qish uchun borish. Hozirda man Registan LC o'quv markazida Ingliz tilini o'rganyabman. Darajam Intermediate. Kurs 10 oyga moljallangan bolib ,asosan IELTS  testiga tayorlaniladi."
+            text: "INgliz tili . Maqsadlarimdan bitasi bu ingliz tilini mukammal bilish va America davlatlariga IT universitedlarda o'qish uchun borish. Hozirda man Registan LC o'quv markazida Ingliz tilini o'rganyabman. Darajam Intermediate. Kurs 10 oyga moljallangan bolib ,asosan IELTS  testiga tayorlaniladi.",
+            skills: '',
         }
     ],
     portfolio: {
@@ -65,23 +83,41 @@ const eng = {
     about:[
         {
             title: "About me",
-            text: "Hi ! My name is Abdulhamid Ahmedov. I'm 19 . I'm from Fergana in Uzbekistan. I am student and I am preparing to study at one of the IT universities in America. I completed the Front-end programming course and I'm currently doing an internship. At the same time, I'm taking the Back-end programming course and I'm also preparing for the IELTS exam in English, you can read about all this below!"
+            text: "Hi ! My name is Abdulhamid Ahmedov. I'm 19 . I'm from Fergana in Uzbekistan. I am student and I am preparing to study at one of the IT universities in America. I completed the Front-end programming course and I'm currently doing an internship. At the same time, I'm taking the Back-end programming course and I'm also preparing for the IELTS exam in English, you can read about all this below!",
         },
         {
             icons: [
                 <FaReact/>
             ] ,
             title: "Frontend",
-            text: "I graduated from the Frontend course of Najot Talim IT training center. In this course, I learned HTML, CSS, and Javascript, and I also learned React from frameworks. I am currently working as a freelancer in frontend development, my level is Junior. I participated in 2 real projects, and you can learn more about the projects from the Portfolio."
+            text: "I graduated from the Frontend course of Najot Talim IT training center. In this course, I learned HTML, CSS, and Javascript, and I also learned React from frameworks. I am currently working as a freelancer in frontend development, my level is Junior. I participated in 2 real projects, and you can learn more about the projects from the Portfolio.",
+            skills: [
+                "Java Script",
+                "React.js",
+                "Rest API",
+                "Bootstrap",
+                "Tailwind",
+                "Scss",
+                "Css",
+                "Html"
+            ],
         },
         {
             icons: [<TbBrandDjango/>],
             title: "Backend",
-            text: "I am currently also studying Back end programming language, because of my interest. This course is designed for 8 months, during the course Python, SQL, Postgresql, Django, Flask, aiGramm (telegram bots) and some other frameworks and libraries are studied."
+            text: "I am currently also studying Back end programming language, because of my interest. This course is designed for 8 months, during the course Python, SQL, Postgresql, Django, Flask, aiGramm (telegram bots) and some other frameworks and libraries are studied.",
+            skills: [
+                "Django",
+                "Flask",
+                "Python",
+                "Postgresql",
+                "Django Rest API",
+            ]
         },
         {
             title: "English",
-            text: "English language . One of my goals is to master English and go to America to study at IT universities. I am currently studying English at the Registan LC. My level is Intermediate. The course is designed for 10 months and mainly prepares for the IELTS test."
+            text: "English language . One of my goals is to master English and go to America to study at IT universities. I am currently studying English at the Registan LC. My level is Intermediate. The course is designed for 10 months and mainly prepares for the IELTS test.",
+            skills: "",
         }
     ],
     portfolio: {

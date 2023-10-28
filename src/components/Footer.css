@@ -79,6 +79,11 @@ body.dark .footer{
         transition: 0.01s;
     }
     .mobile-page-icons:active{
-        font-size: 20px;
+        font-size: 25px;
+    }
+    .activeRoute{
+        border-top: 2px solid red;
+        background-color: red;
+        cursor: not-allowed;
     }
 }

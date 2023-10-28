@@ -63,9 +63,9 @@ function Portfolio() {
       id: 3,
     },
     {
-      img: "./recipe.jpg",
-      mbimg: "./recipe.jpg",
-      link: "https://1recipes.netlify.app/",
+      img: "./todo.jpg",
+      mbimg: "./mb-todo.jpg",
+      link: "https://1react-to-do.netlify.app/",
       github: "",
       id: 9,
     },

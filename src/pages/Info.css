@@ -12,6 +12,7 @@
     font-size: 80px;
     margin: 0;
     font-family: 'Biryani', sans-serif;
+    animation: animateInfoTitle 1s;
 
 }
 .info p{
@@ -23,6 +24,7 @@
     padding-right: 150px;
     padding-left: 150px;
     font-family: 'Biryani', sans-serif;
+    animation: animateInfoTitle 1s;
 
 }
 .bold{
@@ -34,6 +36,7 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
+    animation: animateInfoText 1s;
 }
 .tarmoqlar_item a{
     font-size: 30px;
@@ -75,3 +78,20 @@
         max-width: 300px;
     }
 }    
+
+@keyframes animateInfoTitle {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes animateInfoText {
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

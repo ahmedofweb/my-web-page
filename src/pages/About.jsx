@@ -19,9 +19,9 @@ function About() {
   const obj = useContext(ThemeContext)
   const txt = obj.changeLang ? obj.uzb : obj.eng
   const aboutTxt = txt.about
-  console.log(aboutTxt)
+  console.log(txt.title)
   return (
-    <div>
+    <div className='about'>
       {aboutTxt.map((item)=>{
         const [showInfo , setShowInfo] = useState(false)
         return (
@@ -36,7 +36,23 @@ function About() {
               <h1 onClick={()=>{
                 setShowInfo(!showInfo)
                 }}>{item.title} <span>{showInfo ? <MdKeyboardArrowUp/> : <MdKeyboardArrowDown/>}</span></h1>
-              {showInfo && <p>{item.text}</p>}
+              {showInfo && 
+                <div>
+                  <p>{item.text}</p>
+                  {item.skills && 
+                  <div className='skills'>
+                    <h3 style={{color: "red"}}>{txt.title == "O'zbek"? "Mutaxasislik:" : "Skills:"}</h3>
+                    <div className='animate-skill'>
+                    {item.skills && item.skills.map((skill) => {
+                      return(
+                        <h4 className='skill'>{skill}</h4>
+                      )
+                    })}
+                    </div>
+                  </div>
+                  }
+                </div>
+              }
               {/* <img className='number-svg' src="./number-01.svg" alt="" /> */}
             </div>
           </div>
