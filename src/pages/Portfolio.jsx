@@ -15,25 +15,11 @@ function Portfolio() {
   const [propsLink, setPropsLink] = useState(null);
   const [portfolio, setPortfolio] = useState([
     {
-      img: "./yurist.jpg",
-      mbimg: "./mb-yurist.jpg",
-      link: "https://yurist.netlify.app/",
-      github: "",
-      id: 1,
-    },
-    {
-      img: "./weather.jpg",
-      mbimg: "./mb-weather.jpg",
-      link: "https://aa-the-weather.netlify.app/",
+      img: "./music.jpg",
+      mbimg: "./mb-music.jpg",
+      link: "https://mmusic-player.netlify.app/",
       github: "",
       id: 7,
-    },
-    {
-      img: "./countriesFull.jpg",
-      mbimg: "./mb-countriesFull.jpg",
-      link: "https://aa-country-info.netlify.app/",
-      github: "",
-      id: 5,
     },
     {
       img: "./randomUser.jpg",
@@ -42,11 +28,19 @@ function Portfolio() {
       github: "",
       id: 6,
     },
+    // {
+    //   img: "./bookuz.jpg",
+    //   mbimg: "./bookuz.jpg",
+    //   link: "https://a-book-shop.netlify.app/",
+    //   github: "",
+    //   id: 2,
+    // },
     {
-      img: "./bookuz.jpg",
-      mbimg: "./bookuz.jpg",
-      link: "",
-      id: 2,
+      img: "./weather.jpg",
+      mbimg: "./mb-weather.jpg",
+      link: "https://aa-the-weather.netlify.app/",
+      github: "",
+      id: 7,
     },
     {
       img: "./infoWords.jpg",

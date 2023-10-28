@@ -29,7 +29,7 @@ function About() {
             <div className="item">
             {item.icons ? item.icons.map((icon) =>{
               return(
-                  <span className='animate-icon'>{icon}</span>
+                  <img className='animate-icon' src={icon}/>
               )
             }) : ''}
               <span className='animate-icon'></span>

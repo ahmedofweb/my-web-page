@@ -29,7 +29,7 @@ const uzb = {
         },
         {
             icons: [
-                <FaReact/>
+                "./js.png",
             ] ,
             title: "Frontend",
             text: "Man Najot Ta'lim IT o'quv markazining Frontend kursini bitirganman. Bu kursda HTML, CSS va Javascript tilini o'rganganman qo'shimcha ravishda fremworklardan Reactni xam o'rganganman. Hozirda Frontend yonalishi boyicha frilanserlik qilaman, darajam Junior. 2 real loyihada qatnashganman , loyihalar haqida esa koproq Portfolio dan bilib olishingiz mumkin.",
@@ -45,7 +45,7 @@ const uzb = {
             ],
         },
         {
-            icons: [<TbBrandDjango/>],
+            icons: ["./python.png"],
             title: "Backend",
             text: "Man hozir qo'shimcha ravishda Back end yonalishini xam o'rganyabman , sababi qiziqishim. Bu kurs 8 oyga mo'ljallangan bo'lib , kurs davomida Python, SQL, Postgresql, Django, Flask, aiGramm(telegram botlar) va yana bazi fremwork , kutubxonalar o'rganiladi.",
             skills: [

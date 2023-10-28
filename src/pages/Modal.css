@@ -31,20 +31,19 @@
     font-family: 'Biryani', sans-serif;
     z-index: 10;
     transition: 3s;
+    padding: 20px;
     /* animation: openmodal 0.5s; */
     transform: translate(-50% -50%);
 }
 .link_open_device{
-    padding: 10px;
-    text-decoration: none;
-    background-color: #0022ff;
-    color: #Fff;
     width: 100%;
-    max-width: 100px;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: #0022ff;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 150px;
     border-radius: 10px;
 }
+
 .modal-txt{
     font-size: 20px;
     margin: 10px;
@@ -53,7 +52,7 @@
     display: flex;
     justify-content: end;
     font-size: 30px;
-    color: #0022ff;
+    color: #ff0000;
 }
 .line{
     width: 100%;
