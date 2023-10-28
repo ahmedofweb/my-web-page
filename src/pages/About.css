@@ -93,12 +93,12 @@ body.dark .item{
 }
 
 @media screen and (max-width: 550px) {
-    /* .animate-icon{
-        display: none;
+    .animate-icon{
+        animation: none;
     }
     .icon-after{
-        display: none;
-    } */
+        animation: none;
+    }
     .list{
         margin-top: 100px;
     }
