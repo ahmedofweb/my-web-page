@@ -43,9 +43,9 @@ function Header() {
         obj.mode ? obj.setMode(false) : obj.setMode(true) 
         document.body.classList.toggle("dark")
         if(obj.mode){
-          audio = new Audio('./light.mp3')
+          audio = new Audio('./on-off.mp3')
         }else{
-          audio = new Audio('./dark.mp3')
+          audio = new Audio('./on-off.mp3')
         }
         audio.play()
       }}>{obj.mode ? <BsSun/> : <BsMoonStars/>}</span>
