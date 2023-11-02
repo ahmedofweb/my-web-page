@@ -3,7 +3,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;800;900&display=swap);
 
 
-
 ul, ol{
     list-style: none;
 }
@@ -45,6 +44,20 @@ body.dark .header{
     font-family: 'Jost', sans-serif;
     font-weight: 800;
     font-style: italic;
+}
+.logo_name h5{
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    position: relative;
+}
+.logo_name h5::after{
+    content: 'programmer';
+    font-size: 8px;
+    font-weight: 400;
+    position: absolute;
+    bottom: -2px;
+    right: 0px;
+
 }
 .pages{
     display: flex;
@@ -103,38 +116,39 @@ body.dark .pages_item{
     color: #000;
 }
 .dropdown{
-    position: absolute;
     display: flex;
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
+    flex-direction: row;
     gap: 5px;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: 0;
+    background-color: inherit;
     color: #000;
-    box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+}
+body.dark .dropdown{
+    color: var(--dark-blue);
 }
 
 .language-section{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
     width: 100%;
 }
 .dropdown-lang-sec{
-    position: absolute;
-    left: 120px;
-    top: 250px;
     display: flex;
-    padding: 10px;
-    gap: 5px;
+    padding: 5px;
+    gap: 1px;
     font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px 1px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: 0;
+    background-color: inherit;
+}
+body.dark .dropdown-lang-sec{
+    color: var(--dark-blue);
 }
 .pages_item_lang{
+    display: flex;
     margin: 0;
     padding: 5px;
     position: relative;
@@ -171,10 +185,18 @@ body.dark .pages_item_lang{
     }
     .pages_item:active .icon{
         font-size: 18px;
+        height: 20px;
     }
     .logo_name{
         font-size: 20px;
         padding-left: 30px;
+    }
+    .logo_name h5{
+        margin: 0;
+    }
+    .logo_name h5::after{
+        font-size: 6px;
+        bottom: 6px;
     }
     .pages-list-device{
         display: none;
@@ -215,6 +237,21 @@ body.dark .pages_item_lang{
 }
  
 @media screen and (max-width: 450px){
+    .header{
+        padding: 5px 0 5px;
+    }
+    .logo_name{
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+        gap: 5px;
+    }
+    .logo_name h5{
+        margin: 0;
+    }
+    .burger{
+        font-size: 20px;
+    }
     .pages_item{
         font-size: 18px;
     }

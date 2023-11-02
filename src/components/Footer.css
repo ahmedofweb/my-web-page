@@ -52,6 +52,7 @@ body.dark .footer{
 @media screen and (max-width: 550px) {
     .footer{
         display: flex;
+        padding: 10px 10px 10px 0;
     }
     .device{
         display: none;
@@ -67,16 +68,20 @@ body.dark .footer{
         display: flex;
         align-items: center;
         margin: 0;
-        gap: 70px;
+        gap: 50px;
     }
     .mobile-page-items{
         width: 100%;
         max-width: 50px;
-        height: 50px;
+        height: 30px;
     }
     .mobile-page-icons{
-        font-size: 30px;
+        color: rgb(86, 86, 86);
+        font-size: 25px;
         transition: 0.01s;
+    }
+    .mobile-page-icons:hover{
+        color: #3393f9;
     }
     .mobile-page-icons:active{
         font-size: 25px;

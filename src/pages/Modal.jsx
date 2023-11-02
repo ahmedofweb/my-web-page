@@ -6,7 +6,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import { useContext } from "react";
 import { ThemeContext } from "../components/Contex";
 
-function Modal({ link, setShowModal }) {
+function Modal({ link, setShowModal, showModal }) {
   return (
     <div className="modal-backdrop">
       <div className="modal">

@@ -75,7 +75,8 @@
         display: none;
     }
     .modal {
-        max-width: 200px;
+        max-width: 250px;
+        padding: 0;
     }
     .link_open_device{
         display: none;
@@ -85,15 +86,29 @@
         text-decoration: none;
         color: #fff;
         border: 1px solid#fff;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
         border-bottom-left-radius: 20px;
         background-color: inherit;
         font-size: 15px;
         width: 100%;
         padding: 5px;
     }
+    .link_mobile:hover{
+        background-color: #fff;
+        color: #000;
+        transition: 0.5s;
+    }
+    .link_mobile:hover .modal{
+        background-color: #fff;
+        color: #000;
+        transition: 0.5s;
+    }
     .link_mobile_open{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 20px;
+        border-left: 1px solid #fff;
     }
     .modal-txt{
         font-size: 14px;

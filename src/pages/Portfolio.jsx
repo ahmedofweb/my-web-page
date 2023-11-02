@@ -19,49 +19,49 @@ function Portfolio() {
       mbimg: "./mb-music.jpg",
       link: "https://mmusic-player.netlify.app/",
       github: "",
-      id: 7,
+      id: 1,
     },
     {
       img: "./randomUser.jpg",
       mbimg: "./mb-randomUser.jpg",
       link: "https://aa-random-user.netlify.app/",
       github: "",
-      id: 6,
+      id: 2,
     },
     // {
     //   img: "./bookuz.jpg",
     //   mbimg: "./bookuz.jpg",
     //   link: "https://a-book-shop.netlify.app/",
     //   github: "",
-    //   id: 2,
+    //   id: 3,
     // },
     {
       img: "./weather.jpg",
       mbimg: "./mb-weather.jpg",
       link: "https://aa-the-weather.netlify.app/",
       github: "",
-      id: 7,
+      id: 4,
     },
     {
       img: "./infoWords.jpg",
       mbimg: "./mb-infoWords.jpg",
       link: "https://words-info.netlify.app/",
       github: "",
-      id: 8,
+      id: 5,
     },
     {
       img: "./countries.jpg",
       mbimg: "./mb-countries.jpg",
       link: "https://countries-info-at-react.netlify.app/",
       github: "https://github.com/ahmedofweb/countries-info-at-React",
-      id: 3,
+      id: 6,
     },
     {
       img: "./todo.jpg",
       mbimg: "./mb-todo.jpg",
       link: "https://1react-to-do.netlify.app/",
       github: "",
-      id: 9,
+      id: 7,
     },
   ]);
 
@@ -70,7 +70,7 @@ function Portfolio() {
       <h1 className='prt-title'>{txt.portfolio.title}</h1>
     <p className='prt-text'>{txt.portfolio.text}</p>
      {showModal &&
-            <Modal  setShowModal={setShowModal} link={propsLink}/>
+            <Modal  setShowModal={setShowModal} link={propsLink} showModal={showModal}/>
       }
      { portfolio.map((site) => {
     return(

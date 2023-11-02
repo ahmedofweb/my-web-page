@@ -87,7 +87,7 @@ const eng = {
         },
         {
             icons: [
-                <FaReact/>
+                "./js.png"
             ] ,
             title: "Frontend",
             text: "I graduated from the Frontend course of Najot Talim IT training center. In this course, I learned HTML, CSS, and Javascript, and I also learned React from frameworks. I am currently working as a freelancer in frontend development, my level is Junior. I participated in 2 real projects, and you can learn more about the projects from the Portfolio.",
@@ -103,7 +103,9 @@ const eng = {
             ],
         },
         {
-            icons: [<TbBrandDjango/>],
+            icons: [
+                "./python.png"
+            ],
             title: "Backend",
             text: "I am currently also studying Back end programming language, because of my interest. This course is designed for 8 months, during the course Python, SQL, Postgresql, Django, Flask, aiGramm (telegram bots) and some other frameworks and libraries are studied.",
             skills: [

@@ -53,7 +53,7 @@ function Header() {
         <span>
           <CgProfile />
         </span>
-        {txt.header.name}
+        <h5>{txt.header.name}</h5>
       </h1>
       <ul className="pages-list-device">
         <li>
@@ -91,9 +91,6 @@ function Header() {
             <span className="icon">
               <LuLanguages />
             </span>
-            {txt.header.changeLanguage}
-          </p>
-          {dropdown && (
             <select
               className="dropdown"
               onChange={(e) => {
@@ -101,22 +98,18 @@ function Header() {
                 console.log(e.target.value);
                 if (e.target.value == "uzb") {
                   setChangeLang(true);
-                  const audioUz = new Audio('./uzbek.mp3')
-                  audioUz.play()
                 } else if (e.target.value == "eng") {
                   setChangeLang(false);
-                  const audioEng = new Audio('./english.mp3')
-                  audioEng.play()
                 }
                 setDropdown(false);
                 setShowMenu(false);
               }}
             >
-              <option value={"rus"}>o'zgartirish</option>
+              <option value={"rus"}>{txt.header.changeLanguage}</option>
               <option value={"uzb"}>O'zbek</option>
               <option value={"eng"}>English</option>
             </select>
-          )}
+          </p>
         </li>
       </ul>
       <div className="menu">
@@ -190,9 +183,6 @@ function Header() {
                       <span className="icon">
                         <LuLanguages />
                       </span>
-                      {txt.header.changeLanguage}
-                    </p>
-                    {dropdown && (
                       <select
                         className="dropdown-lang-sec"
                         onChange={(e) => {
@@ -214,11 +204,11 @@ function Header() {
                           TimerShow(setDropdown);
                         }}
                       >
-                        <option value="rus">o'zgartirish</option>
+                        <option value="rus">{txt.header.changeLanguage}</option>
                         <option value="uzb">O'zbek</option>
                         <option value="eng">English</option>
                       </select>
-                    )}
+                    </p>
                   </div>
                 </li>
               </ul>
